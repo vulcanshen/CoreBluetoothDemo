@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AUu-Gh-9wZ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller1-->
+        <scene sceneID="76s-UX-qdz">
+            <objects>
+                <tableViewController id="Xr3-yd-Akw" customClass="ViewController1" customModule="CoreBlueToothDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="C2O-bl-ZzI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Xr3-yd-Akw" id="QNA-P3-v0Z"/>
+                            <outlet property="delegate" destination="Xr3-yd-Akw" id="kFM-IY-4TD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Fed-SK-qQ9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="JvQ-AH-lL8">
+                            <connections>
+                                <action selector="actionRefresh:" destination="Xr3-yd-Akw" id="Vmd-JI-dRR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bbRefresh" destination="JvQ-AH-lL8" id="uP5-sN-Peq"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AdK-aC-R0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="417"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SUE-bO-dTv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AUu-Gh-9wZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eay-L2-hph">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xr3-yd-Akw" kind="relationship" relationship="rootViewController" id="TjY-bI-Jf1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r04-Pq-pjo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="417"/>
+        </scene>
+    </scenes>
+</document>
