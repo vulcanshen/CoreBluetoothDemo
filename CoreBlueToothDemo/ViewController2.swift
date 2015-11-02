@@ -120,6 +120,8 @@ class ViewController2: UITableViewController, CBCentralManagerDelegate, CBPeriph
         
     }
     
+
+    
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 160.5
     }

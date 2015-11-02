@@ -13,6 +13,7 @@ class ViewController1: UITableViewController, CBCentralManagerDelegate {
     
     var btCentralManager: CBCentralManager!
     var btPeripherals: [CBPeripheral] = []
+    var selectedPeripheral: CBPeripheral?
     var btRSSIs: [NSNumber] = []
     var btConnectable: [Int] = []
     @IBOutlet weak var bbRefresh: UIBarButtonItem!
@@ -37,6 +38,9 @@ class ViewController1: UITableViewController, CBCentralManagerDelegate {
     
     override func viewWillAppear(animated: Bool) {
         btCentralManager.delegate = self
+        if selectedPeripheral != nil {
+            btCentralManager.cancelPeripheralConnection(selectedPeripheral!)
+        }
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -58,7 +62,8 @@ class ViewController1: UITableViewController, CBCentralManagerDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let targetVC = segue.destinationViewController as! ViewController2
         targetVC.centralManger = self.btCentralManager
-        targetVC.peripheral = btPeripherals[sender as! Int]
+        selectedPeripheral = btPeripherals[sender as! Int]
+        targetVC.peripheral = selectedPeripheral
     }
     
     
