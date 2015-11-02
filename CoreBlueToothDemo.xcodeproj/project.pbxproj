@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4413AABC1BE6F10800EE7518 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4413AABB1BE6F10800EE7518 /* ViewController2.swift */; };
+		4413AABF1BE6F30900EE7518 /* CharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4413AABD1BE6F30900EE7518 /* CharacteristicCell.swift */; };
+		4413AAC01BE6F30900EE7518 /* CharacteristicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4413AABE1BE6F30900EE7518 /* CharacteristicCell.xib */; };
+		4413AAC21BE7036A00EE7518 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4413AAC11BE7036A00EE7518 /* ViewController3.swift */; };
+		4413AAC51BE7135A00EE7518 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4413AAC41BE7135A00EE7518 /* Extensions.swift */; };
 		448EE3A51BE3677D00941E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448EE3A41BE3677D00941E41 /* AppDelegate.swift */; };
 		448EE3A71BE3677D00941E41 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448EE3A61BE3677D00941E41 /* ViewController1.swift */; };
 		448EE3AA1BE3677D00941E41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448EE3A81BE3677D00941E41 /* Main.storyboard */; };
@@ -15,8 +20,8 @@
 		448EE3B21BE3677D00941E41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448EE3B01BE3677D00941E41 /* LaunchScreen.storyboard */; };
 		448EE3BD1BE3677D00941E41 /* CoreBlueToothDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448EE3BC1BE3677D00941E41 /* CoreBlueToothDemoTests.swift */; };
 		448EE3C81BE3677D00941E41 /* CoreBlueToothDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448EE3C71BE3677D00941E41 /* CoreBlueToothDemoUITests.swift */; };
-		448EE3DA1BE3681C00941E41 /* PeripheralCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448EE3D81BE3681C00941E41 /* PeripheralCellTableViewCell.swift */; };
-		448EE3DB1BE3681C00941E41 /* PeripheralCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448EE3D91BE3681C00941E41 /* PeripheralCellTableViewCell.xib */; };
+		448EE3DA1BE3681C00941E41 /* PeripheralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448EE3D81BE3681C00941E41 /* PeripheralCell.swift */; };
+		448EE3DB1BE3681C00941E41 /* PeripheralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448EE3D91BE3681C00941E41 /* PeripheralCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4413AABB1BE6F10800EE7518 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		4413AABD1BE6F30900EE7518 /* CharacteristicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacteristicCell.swift; sourceTree = "<group>"; };
+		4413AABE1BE6F30900EE7518 /* CharacteristicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacteristicCell.xib; sourceTree = "<group>"; };
+		4413AAC11BE7036A00EE7518 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		4413AAC41BE7135A00EE7518 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		448EE3A11BE3677D00941E41 /* CoreBlueToothDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreBlueToothDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448EE3A41BE3677D00941E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		448EE3A61BE3677D00941E41 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
@@ -51,8 +61,8 @@
 		448EE3C31BE3677D00941E41 /* CoreBlueToothDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreBlueToothDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		448EE3C71BE3677D00941E41 /* CoreBlueToothDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreBlueToothDemoUITests.swift; sourceTree = "<group>"; };
 		448EE3C91BE3677D00941E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		448EE3D81BE3681C00941E41 /* PeripheralCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralCellTableViewCell.swift; sourceTree = "<group>"; };
-		448EE3D91BE3681C00941E41 /* PeripheralCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeripheralCellTableViewCell.xib; sourceTree = "<group>"; };
+		448EE3D81BE3681C00941E41 /* PeripheralCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralCell.swift; sourceTree = "<group>"; };
+		448EE3D91BE3681C00941E41 /* PeripheralCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeripheralCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				448EE3A61BE3677D00941E41 /* ViewController1.swift */,
+				4413AABB1BE6F10800EE7518 /* ViewController2.swift */,
+				4413AAC11BE7036A00EE7518 /* ViewController3.swift */,
+				4413AAC41BE7135A00EE7518 /* Extensions.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -144,8 +157,10 @@
 		448EE3D61BE367D600941E41 /* TableCell */ = {
 			isa = PBXGroup;
 			children = (
-				448EE3D81BE3681C00941E41 /* PeripheralCellTableViewCell.swift */,
-				448EE3D91BE3681C00941E41 /* PeripheralCellTableViewCell.xib */,
+				448EE3D81BE3681C00941E41 /* PeripheralCell.swift */,
+				448EE3D91BE3681C00941E41 /* PeripheralCell.xib */,
+				4413AABD1BE6F30900EE7518 /* CharacteristicCell.swift */,
+				4413AABE1BE6F30900EE7518 /* CharacteristicCell.xib */,
 			);
 			name = TableCell;
 			sourceTree = "<group>";
@@ -257,7 +272,8 @@
 				448EE3B21BE3677D00941E41 /* LaunchScreen.storyboard in Resources */,
 				448EE3AF1BE3677D00941E41 /* Assets.xcassets in Resources */,
 				448EE3AA1BE3677D00941E41 /* Main.storyboard in Resources */,
-				448EE3DB1BE3681C00941E41 /* PeripheralCellTableViewCell.xib in Resources */,
+				448EE3DB1BE3681C00941E41 /* PeripheralCell.xib in Resources */,
+				4413AAC01BE6F30900EE7518 /* CharacteristicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				448EE3A71BE3677D00941E41 /* ViewController1.swift in Sources */,
-				448EE3DA1BE3681C00941E41 /* PeripheralCellTableViewCell.swift in Sources */,
+				448EE3DA1BE3681C00941E41 /* PeripheralCell.swift in Sources */,
 				448EE3A51BE3677D00941E41 /* AppDelegate.swift in Sources */,
+				4413AAC51BE7135A00EE7518 /* Extensions.swift in Sources */,
+				4413AABF1BE6F30900EE7518 /* CharacteristicCell.swift in Sources */,
+				4413AABC1BE6F10800EE7518 /* ViewController2.swift in Sources */,
 				448EE3AD1BE3677D00941E41 /* CoreBlueToothDemo.xcdatamodeld in Sources */,
+				4413AAC21BE7036A00EE7518 /* ViewController3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +534,7 @@
 				448EE3CE1BE3677D00941E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		448EE3CF1BE3677D00941E41 /* Build configuration list for PBXNativeTarget "CoreBlueToothDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +543,7 @@
 				448EE3D11BE3677D00941E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		448EE3D21BE3677D00941E41 /* Build configuration list for PBXNativeTarget "CoreBlueToothDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +552,7 @@
 				448EE3D41BE3677D00941E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PeripheralCellTableViewCell: UITableViewCell {
+class PeripheralCell: UITableViewCell {
 
     @IBOutlet weak var lbUUID: UILabel!
     @IBOutlet weak var lbRSSI: UILabel!

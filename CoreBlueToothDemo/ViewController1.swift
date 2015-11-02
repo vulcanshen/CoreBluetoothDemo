@@ -23,7 +23,7 @@ class ViewController1: UITableViewController, CBCentralManagerDelegate {
         btConnectable.removeAll()
         btPeripherals.removeAll()
         btRSSIs.removeAll()
-        tableView.registerNib(UINib(nibName: "PeripheralCellTableViewCell", bundle: nil), forCellReuseIdentifier: "PeripheralCellTableViewCell")
+        tableView.registerNib(UINib(nibName: "PeripheralCell", bundle: nil), forCellReuseIdentifier: "PeripheralCell")
         
         NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "stopScan", userInfo: nil, repeats: false)
         btCentralManager.scanForPeripheralsWithServices(nil, options: nil)
@@ -35,9 +35,12 @@ class ViewController1: UITableViewController, CBCentralManagerDelegate {
         tableView.reloadData()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        btCentralManager.delegate = self
+    }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: PeripheralCellTableViewCell = tableView.dequeueReusableCellWithIdentifier("PeripheralCellTableViewCell") as! PeripheralCellTableViewCell
+        let cell: PeripheralCell = tableView.dequeueReusableCellWithIdentifier("PeripheralCell") as! PeripheralCell
         cell.lbConntable.text = btConnectable[indexPath.row].description
         cell.lbName.text = btPeripherals[indexPath.row].name
         cell.lbRSSI.text = btRSSIs[indexPath.row].description
@@ -46,6 +49,18 @@ class ViewController1: UITableViewController, CBCentralManagerDelegate {
         return cell
 
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        self.performSegueWithIdentifier("sgToServiceList", sender: indexPath.row)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let targetVC = segue.destinationViewController as! ViewController2
+        targetVC.centralManger = self.btCentralManager
+        targetVC.peripheral = btPeripherals[sender as! Int]
+    }
+    
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 130.5
@@ -62,7 +77,7 @@ class ViewController1: UITableViewController, CBCentralManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         btCentralManager = CBCentralManager(delegate: self, queue: nil)
-
+        tableView.registerNib(UINib(nibName: "PeripheralCell", bundle: nil), forCellReuseIdentifier: "PeripheralCell")
     }
     
 
